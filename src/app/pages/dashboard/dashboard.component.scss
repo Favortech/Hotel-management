@@ -1,0 +1,89 @@
+
+.heading{
+  display: inline-block;
+  margin: 10px;
+  span{
+    display: block;
+    font-size: 15px;
+  }
+}
+.heading2{
+  display: inline-block;
+  margin: 10px;
+  
+      width: 200px; /* Set the width of the box */
+      height: 100px; /* Set the height of the box */
+      border: 1px solid #ccc; /* Set the border style, width, and color */
+      border-radius: 10px; /* Set the border radius */
+      padding: 20px; /* Add some padding to the box */
+    
+  }
+
+.card-header{
+text-align: start;
+}
+.card {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-innerBody {
+  display: flex;
+  align-items: center;
+}
+
+.card-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.card-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-footer {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.table-responsive-md {
+  overflow-x: auto;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}

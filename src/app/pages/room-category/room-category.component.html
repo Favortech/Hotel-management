@@ -1,0 +1,33 @@
+<button type="button" class="btn btn-outline-secondary mr-2" routerLink="/create-room-category">
+  Add A New Room Category
+    </button>
+    <!-- <button type="button" class="btn btn-outline-secondary mr-2" title="Tooltip on top" router-link="/create-room">
+        View Room Category
+        </button> -->
+<hr>
+<table class="table table-striped">
+<thead>
+<tr>
+  <th scope="col">#</th>
+  <th scope="col">Room Category Name</th>
+  <th scope="col">Room Category View</th>
+  <th scope="col">Room Category Description</th>
+  <th scope="col">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  @for (room of roomCategories; track $index) {
+
+    <th scope="row">{{ room.id }}</th>
+
+    <td>{{ room.roomName }}
+    <td>
+       {{ room.roomView }}
+    </td>
+    <td>{{ room.roomDescription}}</td>
+    
+  }
+</tr>
+</tbody>
+</table>

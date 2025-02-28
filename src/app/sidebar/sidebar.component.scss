@@ -1,0 +1,100 @@
+.wrapper{
+  height: 100%;
+  position: fixed;
+  
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 100%;
+  background-color:purple;
+  color: #fff;
+  padding: 0px;
+  transition: width 0.3s;
+}
+.submenu {
+  list-style: none;
+  padding-left: 10px; /* Indentation for submenu */
+  margin: 0;
+}
+
+.submenu .nav-item {
+  padding: 5px 0; /* Spacing for submenu items */
+}
+
+.submenu .nav-link {
+  display: block; /* Ensure submenu links are block elements */
+  color: #6d6e7e; /* Adjust color as needed */
+}
+
+.submenu .nav-link:hover {
+  color: #fff;
+  text-decoration: underline; /* Add hover effect */
+}
+.sidebar.shrink {
+  width: 100px;
+  
+}
+.sidebar.shrink .submenu .nav-item .nav-link{
+  display: none;
+}
+
+.sidebar.shrink .link-text {
+  display: none;
+  
+}
+.nav-link {
+  position: relative; /* Position relative for tooltip positioning */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  color: #ccc;
+}
+span{
+  margin: 10px;
+}
+
+
+.nav-link:hover .tooltip {
+  display: block; /* Show tooltip on hover */
+}
+
+  
+  @media (max-width: 768px) {
+    
+    .content {
+      margin-left: 60px;
+    }
+    .sidebar {
+      width: 100px;
+    }
+    .sidebar .link-text {
+      display: none;
+    }
+    .sidebar .submenu .nav-item .nav-link{
+      display: none;
+    }
+    .tooltip {
+      left: 110%; /* Adjust tooltip position for mobile */
+    }
+  }
+  

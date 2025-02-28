@@ -1,0 +1,9 @@
+<div class="room-list">
+    <div class="room-item">
+        @for (room of availableRooms; track $index) {
+            <h2>{{ room.name }}</h2>
+            <p>{{ room.description }}</p>
+        }
+     
+    </div>
+  </div>

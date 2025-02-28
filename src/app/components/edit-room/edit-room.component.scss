@@ -1,0 +1,57 @@
+a{
+    text-decoration: none;
+    color: white;
+  }
+  #input {
+    border-radius: 20px;
+    margin: 10px;
+    height: 40px;
+  }
+  #input-description {
+    border-radius: 20px;
+    margin: 10px;
+    height: 40px;
+    width: 80%;
+  }
+  .wrapper {
+    border: 10px grey;
+    border-radius: 20px;
+    position: relative;
+  
+    padding: 20px;
+  }
+  
+  .table {
+    margin-top: 20px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .image-gallery img {
+    border: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  input {
+    border-radius: 30px;
+    height: 40px;
+    width: 100%;
+    display: flexbox;
+  }
+  
+  col {
+    display: block;
+  }
+  .btn {
+    border: 10px grey;
+    border-radius: 20px;
+    margin: 10px;
+  }
+  

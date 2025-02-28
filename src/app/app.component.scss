@@ -1,0 +1,19 @@
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+  }
+  
+  .content.expand {
+    margin-left: 60px;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      margin-left: 60px;
+    }}
+
+
+
+    

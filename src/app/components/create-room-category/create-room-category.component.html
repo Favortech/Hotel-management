@@ -1,0 +1,45 @@
+<div class="container my-5">
+  <h2>Create Room Category</h2>
+  <hr />
+  <form [formGroup]="roomcategoryForm" (ngSubmit)="onCreate()">
+    <div class="mb-3">
+      <label for="image" class="form-label">Image</label>
+      <input type="file" id="image" (change)="handleFileChange($event)" multiple />
+      <div id="gallery" class="mt-2"></div>
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Category Name</label>
+      <input type="text" formControlName="name" id="name" class="form-control" placeholder="Room Category Name" />
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea formControlName="description" id="description" class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="featureName" class="form-label">Add Feature</label>
+      <input type="text" formControlName="featureName" id="featureName" class="form-control" placeholder="Feature Name" />
+      <button type="button" class="btn btn-secondary mt-2" (click)="addFeature()">Add Feature</button>
+    </div>
+
+    <h4>Features</h4>
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th>Feature Name</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let feature of features.controls; let i = index">
+          <td>{{ feature }}</td>
+          <td>
+            <button class="btn btn-danger" (click)="removeFeature(i)">Remove</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <button type="submit" class="btn btn-primary mt-3">Create Room Category</button>
+  </form>
+</div>

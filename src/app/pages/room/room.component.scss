@@ -1,0 +1,92 @@
+// .box{
+//     border: 20px;
+//     border-radius: 20px;
+//     border-color: red;
+//     background-color: grey;
+//     height: 80vh;
+//     width: 100%;
+// }
+// .container {
+//     margin-top: 20px;
+//   }
+  
+//   table {
+//     margin-top: 20px;
+//   }
+  
+//   th, td {
+//     text-align: center;
+//   }
+  
+//   button {
+//     margin-right: 10px;
+//   }
+
+#main-btn{
+  width: fit-content;
+  position: relative;
+  text-align: end;
+}
+
+.button-group{
+  display: flex;
+  
+  justify-content: space-between;
+  margin: 10px;
+}
+.table-head{
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+}
+#submit{
+  margin-top: 10px;
+  
+}
+
+/* icon-menu.component.css */
+.icon-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.menu {
+  position: absolute;
+  top: 30px; /* Adjust based on your layout */
+  left: 0;
+  background-color: white; /* Background color */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.menu button {
+  display: block;
+  width: 100%; /* Full width */
+  border: none;
+  padding: 8px;
+  background: none;
+  text-align: left; /* Align text to the left */
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}
+
+.dark-modal .modal-content {
+  background-color: #292b2c;
+  color: white;
+}
+.dark-modal .close {
+  color: white;
+}
+.light-blue-backdrop {
+  background-color: #5cb3fd;
+}

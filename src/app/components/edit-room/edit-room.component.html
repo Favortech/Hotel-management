@@ -1,0 +1,141 @@
+<div class="wrapper">
+  <h2>Add A New Room</h2>
+  <hr />
+  <h3>Room Picture</h3>
+  <input type="file" id="imageInput" multiple accept="image/*" (change)="handleFileChange($event)">
+  <button (click)="addMoreFiles()">Add more Pictures</button>
+  <div class="image-gallery" id="gallery"></div>
+  <hr />
+  <h3>Room Details</h3>
+  <form action="" class="row align-items-center" (ngSubmit)="updateRoom()">
+
+    <div class="col-sm-3">
+      <label for="specificSizeInputName">room Number</label>
+      <input
+        class="form-control"
+        type="text"
+        name="roomNumber"
+        id="specificSizeInputName"
+        placeholder="room 101"
+        [(ngModel)]="room.roomNumber"
+      />
+    </div>
+    <div class="col-sm-3">
+      <label for="specificSizeSelect">room Category</label>
+
+      <select
+        class="form-select"
+        name="roomCategory"
+        id="specificSizeSelect"
+        [(ngModel)]="room.category"
+      >       <option selected>Choose ...</option>
+        <option value="1">Regular</option>
+        <option value="2">Standard</option>
+        <option value="3">VIP</option>
+        <option value="4">Conference Hall</option>
+      </select>
+    </div>
+    <div class="col-sm-3">
+      <label for="specificSizeInputName">room Floor</label>
+      <input
+        class="form-control"
+        type="text"
+        name="roomFloor"
+        id="specificSizeInputName"
+        placeholder="1st floor"
+        [(ngModel)]="room.roomFloor"
+      />    </div>
+
+    <div class="col-sm-3">
+      <label for="specificSizeInputName">room Capacity</label>
+      <input
+        class="form-control"
+        type="text"
+        name="roomCapacity"
+        id="specificSizeInputName"
+        placeholder="3"
+        [(ngModel)]="room.capacity"
+      />   </div>
+    <div class="col-sm-3">
+      <label for="specificSizeInputName">room Description</label>
+      <input
+        class="form-control"
+        type="text"
+        name="roomDescription"
+        id="specificSizeInputName"
+        placeholder="1001"
+        [(ngModel)]="room.description"
+      />
+    </div>
+
+    <div class="col-sm-3">
+      <label for="specificSizeSelect">room Availability</label>
+
+      <select
+        class="form-select"
+        name="roomAvailable"
+        id="specificSizeSelect"
+        [(ngModel)]="room.isAvailable"
+      >
+        <option value="1">True</option>
+        <option value="2">False</option>
+      </select>
+    </div>
+    <div class="col-sm-3">
+      <label for="specificSizeInputName">room Price</label>
+      <input
+        class="form-control"
+        type="text"
+        name="roomPrice"
+        id="specificSizeInputName"
+        [(ngModel)]="room.price"
+      /></div>
+   
+  
+  <hr />
+  <h2>Item List</h2>
+<!-- <div class="col input-group">
+  <label for="">Name Of Room Amenity </label>
+  <input [(ngModel)]="newItemName" type="text" name="" id="" />
+  <label for="">Number of Room Amenity</label>
+  <input [(ngModel)]="newItemNumber" type="number" name="" id="" />
+  <button (click)="addItem()" class="btn btn-primary">Add Amenity</button>
+</div> -->
+<hr />
+<table class="table table-striped table-hover"  [(ngModel)]="selectedAmenities">
+  <thead>
+    <tr>
+      <th scope="col">S/N</th>
+      <th scope="col">Available Amenity</th>
+      <th scope="col">Amount Of Amenity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <tr *ngFor="let amenity of room.amenities; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>
+          <div>
+           
+            <input type="text" name="" id="" placeholder=" {{ amenity.name }}
+            ">
+
+          </div>
+          
+        </td>
+        <td>
+          <div class="row">    
+            <input type="number" name="" id="" placeholder="{{ amenity.quantity }}"> 
+          </div>
+         
+      
+        </td>
+      </tr>
+  </tbody>
+</table>
+
+</form>
+</div>
+<!-- <button type="button" class="btn btn-primary" (click)="editRoom()" routerLink="/room">Save Changes</button>
+<button type="button" class="btn btn-danger">Cancel</button> -->
+

@@ -1,0 +1,159 @@
+<div id="wrapper">
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper" class="sidebar" [ngClass]="{ shrink: isShrink }">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <span class="link-text">Hotel System</span>
+        <i
+          (click)="toggleSidebar()"
+          class="bi bi-list"
+          title="Hotel System"
+        ></i>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dashboard">
+          <i class="bi bi-speedometer2" title="Dashboard"></i>
+          <span class="link-text">Dashboard</span>
+        </a>
+      </li>
+      <!-- <li class="nav-item with-submenu">
+        <a class="nav-link" (click)="toggleSubmenu('roomCategory')">
+          <i class="bi bi-house" title="room Category"></i>
+          <span class="link-text">Room Category</span>
+          <i
+            class="bi"
+            [ngClass]="
+              submenus['roomCategory'] ? 'bi-chevron-up' : 'bi-chevron-down'
+            "
+            style="margin-left: auto"
+          ></i>
+        </a>
+        <ul class="submenu" *ngIf="submenus['roomCategory']">
+          <li class="nav-item">
+            <i class="bi bi-house-add" title="Create Room Category"></i>
+            <a class="nav-link" href="/create-room-category">
+              <span class="link-text">Create Room Category</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <i class="bi bi-house-add-fill" title="View Room Category"></i>
+            <a class="nav-link" href="/view-room-category">
+              <span class="link-text">View Room Category</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item with-submenu">
+        <a class="nav-link" (click)="toggleSubmenu('room')">
+          <i class="bi bi-house" title="Room"></i>
+          <span class="link-text">Room</span>
+          <i
+            class="bi"
+            [ngClass]="submenus['room'] ? 'bi-chevron-up' : 'bi-chevron-down'"
+            style="margin-left: auto"
+          ></i>
+        </a>
+        <ul class="submenu" *ngIf="submenus['room']">
+          <li class="nav-item">
+            <i class="bi bi-house-add" title="Create Room"></i>
+            <a class="nav-link" href="/create-room">
+              <span class="link-text">Create Room</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <i class="bi bi-house-add-fill" title="View Room"></i>
+            <a class="nav-link" href="/view-room">
+              <span class="link-text">View Room</span>
+            </a>
+          </li>
+        </ul>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="/room-category">
+          <i class="bi bi-house" title="Guest"></i>
+          <span class="link-text">Room Category</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/room">
+          <i class="bi bi-house" title="Guest"></i>
+          <span class="link-text">Room</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/staff">
+          <i class="bi bi-person" title="Staff"></i>
+          <span class="link-text">Staff</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/guest">
+          <i class="bi bi-people-fill" title="Guest"></i>
+          <span class="link-text">Guest</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/booking">
+          <i class="bi bi-box-arrow-down" title="Booking"></i>
+          <span class="link-text">Booking</span>
+        </a>
+      </li>
+
+      <li class="nav-item with-submenu">
+        <a class="nav-link" (click)="toggleSubmenu('kitchen')">
+          <i class="bi bi-egg" title="kitchen"></i>
+          <span class="link-text">kitchen</span>
+          <i
+            class="bi"
+            [ngClass]="
+              submenus['kitchen'] ? 'bi-chevron-up' : 'bi-chevron-down'
+            "
+            style="margin-left: auto"
+          ></i>
+        </a>
+        <ul class="submenu" *ngIf="submenus['kitchen']">
+          <li class="nav-item">
+            <i class="bi bi-egg" title="Create Food"></i>
+            <a class="nav-link" href="/create-food">
+              <span class="link-text">Create Food Type</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <i class="bi bi-egg-fill" title="View Food Menu"></i>
+            <a class="nav-link" href="/view-food">
+              <span class="link-text">View Food Menu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <i class="bi bi-egg-fried" title="Order Food"></i>
+            <a class="nav-link" href="/order-food">
+              <span class="link-text">Order Food</span>
+            </a>
+          </li>
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown" *ngIf="currentGuest; else not_loggedin">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  welcome {{ currentGuest.emailAddress }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a routerLink="/my-reservations" style="cursor: pointer" class="dropdown-item">My Reservations</a>
+                  <div class="dropdown-divider"></div>
+                <!-- <a class="dropdown-item" (click)="logout()" style="cursor:pointer" >Logout</a> -->
+                </div>
+              </li>
+              <ng-template #not_loggedin>
+                  <li class="nav-item">
+                      <a class="nav-link" routerLink="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/register">Register</a>
+                    </li>
+              </ng-template>
+          </ul>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

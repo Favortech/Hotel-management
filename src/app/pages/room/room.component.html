@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <h3>Room Details</h3>
+
+  <hr />
+  
+  <div class="button-group">
+    <button class="nav-button" (click)="loadRooms()">All Rooms</button>
+    <button class="nav-button" (click)="loadRooms()">Available Rooms</button>
+    <button class="nav-button" (click)="loadRooms()">Booked Rooms</button>
+  </div>
+
+ <div class="table-head">
+  <input type="text" placeholder="Search" [(ngModel)]="searchTerm" (input)="filterRooms()" />
+  <button id="main-btn" class="btn btn-primary" routerLink="/create-room">
+    Create New Room
+    
+  </button>
+ </div>
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+        <th scope="col">S/N</th>
+        <th scope="col">Room Id</th>
+        <th scope="col">Room Number</th>
+        <th scope="col">Room Floor</th>
+        <th scope="col">Room Category</th>
+        <th scope="col">Room Capacity</th>
+        <th scope="col">Room Price</th>
+        <th scope="col">Room Availability</th>
+        <th scope="col">Room Description</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for ( room of paginate(filteredRooms); track $index) {
+      <tr>
+          <td>{{ (currentPage - 1) * itemsPerPage + ($index + 1) }}</td>
+          <th scope="row">{{ room.id }}</th>
+          <td>{{ room.roomNumber }}</td>
+          <td>{{ room.roomFloor }}</td>
+          <td>{{ room.category }}</td>
+          <td>{{ room.capacity }}</td>
+          <td>{{ room.price }}</td>
+          <td>
+            <span [class]="getStatusClass(room.isAvailable)">
+              {{ room.isAvailable }}
+            </span>
+          </td>
+          <td>{{ room.description }}</td>
+          <td>
+            <button type="button" class="btn btn-primary" (click)="editRoom(room.id)">
+              <i class="bi bi-pencil"></i>
+            </button>
+            <button type="button" class="btn btn-sm btn-danger" (click)="deleteRoom(room.id)">
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        
+      </tr>}
+    </tbody>
+  </table>
+
+  <div class="pagination">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+  </div>
+</div>

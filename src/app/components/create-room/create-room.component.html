@@ -1,0 +1,157 @@
+<div class="container my-5">
+  <h2>Add A New Room</h2>
+  <hr />
+  <h3>Room Picture</h3>
+  <!-- <div class="mb-3">
+    <label for="imageInput" class="form-label">Room Images</label>
+    <input type="file" id="imageInput" (change)="handleFileChange($event)" multiple accept="image/*" />
+    <div class="image-gallery" id="gallery"></div>
+  </div> -->
+ 
+  <form [formGroup]="roomForm" (ngSubmit)="onCreate()">
+    <div class="container-fluid col ">
+      <div class="row">
+       
+        <input
+          class="container-fluid box justify-content-center"
+          type="file"
+          id="imageInput"
+          formControlName="image"
+          multiple
+          accept="image/*"
+          (change)="handleFileChange($event)"
+        />
+        <div class="image-gallery" id="gallery"></div>
+      </div>
+      
+      <div class="row">
+        <div class="col mb-3">
+          <label for="roomNumber" class="form-label">Room Number</label>
+          <input
+            type="text"
+            formControlName="roomNumber"
+            id="roomNumber"
+            class="form-control"
+            placeholder="Room Number"
+          />
+        </div>
+        <div class="col mb-3">
+          <label for="category" class="form-label">Room Category</label>
+          <select
+              formControlName="category"
+              id="category"
+              class="form-select"
+          >
+              <option *ngFor="let category of categories" [value]="category">
+                  {{ category.categoryName }} <!-- Display category name -->
+              </option>
+          </select>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label for="roomFloor" class="form-label">Room Floor</label>
+          <input
+            type="text"
+            formControlName="roomFloor"
+            id="roomFloor"
+            class="form-control"
+            placeholder="Room Floor"
+          />
+        </div>
+        <div class="col mb-3">
+          <label for="capacity" class="form-label">Room Capacity</label>
+          <input
+            type="number"
+            formControlName="capacity"
+            id="capacity"
+            class="form-control"
+            placeholder="Room Capacity"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label for="isAvailable" class="form-label">Room Availability</label>
+          <select
+            formControlName="isAvailable"
+            id="isAvailable"
+            class="form-select"
+            >
+              <option value="Available">Available</option>
+              <option value="Under Maintenance">Under Maintenance</option>
+              <option value="Booked">Booked</option>
+          </select>
+        </div>
+        <div class="col mb-3">
+          <label for="price" class="form-label">Room Price</label>
+          <input
+            type="number"
+            formControlName="price"
+            id="price"
+            class="form-control"
+            placeholder="Room Price"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label for="description" class="form-label">Room Description</label>
+          <textarea
+            class="form-control"
+            formControlName="description"
+            id="description"
+            rows="3"
+          ></textarea>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col mb-3">
+          <label for="name" class="form-label">Amenity Name</label>
+          <input
+            type="text"
+            formControlName="name"
+            id="name"
+            class="form-control"
+            placeholder="Amenity Name"
+          />
+        </div>
+        <div class="col mb-3">
+          <label for="quantity" class="form-label">Amenity Quantity</label>
+          <input
+            type="number"
+            formControlName="quantity"
+            id="quantity"
+            class="form-control"
+            placeholder="Amenity Quantity"
+          />
+        </div>
+      </div>
+      <button type="button" (click)="addAmenity()" class="btn btn-secondary">Add Amenity</button>
+
+      <!-- Amenities Table -->
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th>Amenity Name</th>
+            <th>Quantity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let amenity of amenitiesList; let i = index">
+            <td>{{ amenity.AmenityName }}</td>
+            <td>{{ amenity.AmenityQuantity }}</td>
+            <td>
+              <button type="button" (click)="removeAmenity(i)" class="btn btn-danger">Remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a>
+      <button type="submit" class="btn btn-primary" >Create Room</button ></a>
+      <button type="button" class="btn btn-danger" >Cancel</button>
+    </div>
+  </form>
+</div>
