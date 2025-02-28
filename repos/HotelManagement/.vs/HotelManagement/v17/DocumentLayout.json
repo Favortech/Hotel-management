@@ -1,0 +1,638 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\HotelManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1342ACE-387E-431E-864B-43DA2289A977}|HotelManagementAPI\\HotelManagementAPI.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1342ACE-387E-431E-864B-43DA2289A977}|HotelManagementAPI\\HotelManagementAPI.csproj|solutionrelative:hotelmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementinfrastructure\\repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|solutionrelative:hotelmanagementinfrastructure\\repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8ED39E4-5FC9-4DB3-B5EC-1583825E2FCA}|HotelManagementDomain\\HotelManagementDomain.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementdomain\\interfaces\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8ED39E4-5FC9-4DB3-B5EC-1583825E2FCA}|HotelManagementDomain\\HotelManagementDomain.csproj|solutionrelative:hotelmanagementdomain\\interfaces\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\query\\room query\\getroombycategoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\query\\room query\\getroombycategoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\queryhandler\\room queryhandler\\getroombycategoryqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\queryhandler\\room queryhandler\\getroombycategoryqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1342ACE-387E-431E-864B-43DA2289A977}|HotelManagementAPI\\HotelManagementAPI.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapi\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1342ACE-387E-431E-864B-43DA2289A977}|HotelManagementAPI\\HotelManagementAPI.csproj|solutionrelative:hotelmanagementapi\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\commandhandler\\room commandhandler\\createroomcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\commandhandler\\room commandhandler\\createroomcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8ED39E4-5FC9-4DB3-B5EC-1583825E2FCA}|HotelManagementDomain\\HotelManagementDomain.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementdomain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8ED39E4-5FC9-4DB3-B5EC-1583825E2FCA}|HotelManagementDomain\\HotelManagementDomain.csproj|solutionrelative:hotelmanagementdomain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\command\\room command\\createroomcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\command\\room command\\createroomcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\query\\room query\\getallroomsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\query\\room query\\getallroomsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\commandhandler\\staff commandhandler\\updatestaffcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\commandhandler\\staff commandhandler\\updatestaffcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\commandhandler\\staff commandhandler\\deletestaffcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\commandhandler\\staff commandhandler\\deletestaffcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\commandhandler\\staff commandhandler\\createstaffcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\commandhandler\\staff commandhandler\\createstaffcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\command\\staff command\\createstaffcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\command\\staff command\\createstaffcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\query\\staff query\\getstaffbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\query\\staff query\\getstaffbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\command\\staff command\\updatestaffcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\command\\staff command\\updatestaffcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementinfrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|solutionrelative:hotelmanagementinfrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\queryhandler\\staff queryhandler\\getstaffqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\queryhandler\\staff queryhandler\\getstaffqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\queryhandler\\room queryhandler\\getallroomsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\queryhandler\\room queryhandler\\getallroomsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\query\\staff query\\getstaffquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\query\\staff query\\getstaffquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\queryhandler\\staff queryhandler\\getstaffbypostqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\queryhandler\\staff queryhandler\\getstaffbypostqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\query\\staff query\\getstaffbypostquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\query\\staff query\\getstaffbypostquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\queryhandler\\staff queryhandler\\getstaffbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\queryhandler\\staff queryhandler\\getstaffbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\queryhandler\\room queryhandler\\getroombyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\queryhandler\\room queryhandler\\getroombyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\query\\room query\\getroombyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\query\\room query\\getroombyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\commandhandler\\room commandhandler\\updateroomcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\commandhandler\\room commandhandler\\updateroomcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\command\\room command\\updateroomcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\command\\room command\\updateroomcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\command\\staff command\\deletestaffcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\command\\staff command\\deletestaffcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\commandhandler\\room commandhandler\\deleteroomcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\commandhandler\\room commandhandler\\deleteroomcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapplication\\command\\room command\\deleteroomcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72AEEEBC-540A-4092-B7DA-D6A8F5258C25}|HotelManagementApplication\\HotelManagementApplication.csproj|solutionrelative:hotelmanagementapplication\\command\\room command\\deleteroomcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementinfrastructure\\migrations\\20250226155204_updated-category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|solutionrelative:hotelmanagementinfrastructure\\migrations\\20250226155204_updated-category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementinfrastructure\\migrations\\20250226160452_updated-categoryid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|solutionrelative:hotelmanagementinfrastructure\\migrations\\20250226160452_updated-categoryid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1342ACE-387E-431E-864B-43DA2289A977}|HotelManagementAPI\\HotelManagementAPI.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementapi\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1342ACE-387E-431E-864B-43DA2289A977}|HotelManagementAPI\\HotelManagementAPI.csproj|solutionrelative:hotelmanagementapi\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementinfrastructure\\migrations\\20250220215845_staff-phonenumber-added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|solutionrelative:hotelmanagementinfrastructure\\migrations\\20250220215845_staff-phonenumber-added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8ED39E4-5FC9-4DB3-B5EC-1583825E2FCA}|HotelManagementDomain\\HotelManagementDomain.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementdomain\\entities\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8ED39E4-5FC9-4DB3-B5EC-1583825E2FCA}|HotelManagementDomain\\HotelManagementDomain.csproj|solutionrelative:hotelmanagementdomain\\entities\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementinfrastructure\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|solutionrelative:hotelmanagementinfrastructure\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8ED39E4-5FC9-4DB3-B5EC-1583825E2FCA}|HotelManagementDomain\\HotelManagementDomain.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementdomain\\interfaces\\istaffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8ED39E4-5FC9-4DB3-B5EC-1583825E2FCA}|HotelManagementDomain\\HotelManagementDomain.csproj|solutionrelative:hotelmanagementdomain\\interfaces\\istaffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|c:\\users\\user\\source\\repos\\hotelmanagement\\hotelmanagementinfrastructure\\migrations\\20250227131321_revamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A6A31D-4B9D-4FBD-9D90-EE08B2691F42}|HotelManagementInfrastructure\\HotelManagementInfrastructure.csproj|solutionrelative:hotelmanagementinfrastructure\\migrations\\20250227131321_revamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementAPI\\Program.cs",
+              "RelativeDocumentMoniker": "HotelManagementAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementAPI\\Program.cs",
+              "RelativeToolTip": "HotelManagementAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T13:10:27.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateRoomCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Room CommandHandler\\CreateRoomCommandHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\CommandHandler\\Room CommandHandler\\CreateRoomCommandHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Room CommandHandler\\CreateRoomCommandHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\CommandHandler\\Room CommandHandler\\CreateRoomCommandHandler.cs",
+              "ViewState": "AgIAAAQAAADAZWZmZuYswAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:43:45.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRoomRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementDomain\\Interfaces\\IRoomRepository.cs",
+              "RelativeDocumentMoniker": "HotelManagementDomain\\Interfaces\\IRoomRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementDomain\\Interfaces\\IRoomRepository.cs",
+              "RelativeToolTip": "HotelManagementDomain\\Interfaces\\IRoomRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:35:54.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoomRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Repositories\\RoomRepository.cs",
+              "RelativeDocumentMoniker": "HotelManagementInfrastructure\\Repositories\\RoomRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Repositories\\RoomRepository.cs",
+              "RelativeToolTip": "HotelManagementInfrastructure\\Repositories\\RoomRepository.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwEAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:36:08.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetRoomByCategoryQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetRoomByCategoryQueryHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetRoomByCategoryQueryHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetRoomByCategoryQueryHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetRoomByCategoryQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:19:05.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetRoomByCategoryQuery.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Room Query\\GetRoomByCategoryQuery.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Query\\Room Query\\GetRoomByCategoryQuery.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Room Query\\GetRoomByCategoryQuery.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Query\\Room Query\\GetRoomByCategoryQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T15:47:55.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementAPI\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "HotelManagementAPI\\Controllers\\RoomController.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementAPI\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "HotelManagementAPI\\Controllers\\RoomController.cs",
+              "ViewState": "AgIAACUAAAAA//////8PwDIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:41:54.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementDomain\\Entities\\Room.cs",
+              "RelativeDocumentMoniker": "HotelManagementDomain\\Entities\\Room.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementDomain\\Entities\\Room.cs",
+              "RelativeToolTip": "HotelManagementDomain\\Entities\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T14:54:38.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20250227131321_revamp.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Migrations\\20250227131321_revamp.cs",
+              "RelativeDocumentMoniker": "HotelManagementInfrastructure\\Migrations\\20250227131321_revamp.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Migrations\\20250227131321_revamp.cs",
+              "RelativeToolTip": "HotelManagementInfrastructure\\Migrations\\20250227131321_revamp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T13:13:22.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateRoomCommand.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Room Command\\CreateRoomCommand.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Command\\Room Command\\CreateRoomCommand.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Room Command\\CreateRoomCommand.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Command\\Room Command\\CreateRoomCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:42:50.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20250226155204_updated-category.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Migrations\\20250226155204_updated-category.cs",
+              "RelativeDocumentMoniker": "HotelManagementInfrastructure\\Migrations\\20250226155204_updated-category.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Migrations\\20250226155204_updated-category.cs",
+              "RelativeToolTip": "HotelManagementInfrastructure\\Migrations\\20250226155204_updated-category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T15:52:04.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250226160452_updated-categoryId.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Migrations\\20250226160452_updated-categoryId.cs",
+              "RelativeDocumentMoniker": "HotelManagementInfrastructure\\Migrations\\20250226160452_updated-categoryId.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Migrations\\20250226160452_updated-categoryId.cs",
+              "RelativeToolTip": "HotelManagementInfrastructure\\Migrations\\20250226160452_updated-categoryId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:04:52.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementAPI\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "HotelManagementAPI\\Controllers\\StaffController.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementAPI\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "HotelManagementAPI\\Controllers\\StaffController.cs",
+              "ViewState": "AgIAAA8AAACgl5mZmZkxwCAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:41:55.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetAllRoomsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Room Query\\GetAllRoomsQuery.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Query\\Room Query\\GetAllRoomsQuery.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Room Query\\GetAllRoomsQuery.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Query\\Room Query\\GetAllRoomsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:24:09.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DeleteStaffCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\DeleteStaffCommandHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\DeleteStaffCommandHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\DeleteStaffCommandHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\DeleteStaffCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:46:00.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateStaffCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\UpdateStaffCommandHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\UpdateStaffCommandHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\UpdateStaffCommandHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\UpdateStaffCommandHandler.cs",
+              "ViewState": "AgIAAAUAAAAgAAAAAIApwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:56:44.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20250220215845_staff-phonenumber-added.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Migrations\\20250220215845_staff-phonenumber-added.cs",
+              "RelativeDocumentMoniker": "HotelManagementInfrastructure\\Migrations\\20250220215845_staff-phonenumber-added.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Migrations\\20250220215845_staff-phonenumber-added.cs",
+              "RelativeToolTip": "HotelManagementInfrastructure\\Migrations\\20250220215845_staff-phonenumber-added.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:58:45.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementDomain\\Entities\\Staff.cs",
+              "RelativeDocumentMoniker": "HotelManagementDomain\\Entities\\Staff.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementDomain\\Entities\\Staff.cs",
+              "RelativeToolTip": "HotelManagementDomain\\Entities\\Staff.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAMAqwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:53:56.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateStaffCommand.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Staff Command\\CreateStaffCommand.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Command\\Staff Command\\CreateStaffCommand.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Staff Command\\CreateStaffCommand.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Command\\Staff Command\\CreateStaffCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T19:44:42.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateStaffCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\CreateStaffCommandHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\CreateStaffCommandHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\CreateStaffCommandHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\CommandHandler\\Staff CommandHandler\\CreateStaffCommandHandler.cs",
+              "ViewState": "AgIAAAIAAAAAMjMzMzMbwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T19:45:16.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UpdateStaffCommand.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Staff Command\\UpdateStaffCommand.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Command\\Staff Command\\UpdateStaffCommand.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Staff Command\\UpdateStaffCommand.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Command\\Staff Command\\UpdateStaffCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:52:33.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetStaffByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Staff Query\\GetStaffByIdQuery.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Query\\Staff Query\\GetStaffByIdQuery.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Staff Query\\GetStaffByIdQuery.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Query\\Staff Query\\GetStaffByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:00:43.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "StaffRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Repositories\\StaffRepository.cs",
+              "RelativeDocumentMoniker": "HotelManagementInfrastructure\\Repositories\\StaffRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\Repositories\\StaffRepository.cs",
+              "RelativeToolTip": "HotelManagementInfrastructure\\Repositories\\StaffRepository.cs",
+              "ViewState": "AgIAAAMAAAAAc2ZmZmb0vwgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:28:08.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "HotelManagementInfrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementInfrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "HotelManagementInfrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:38:36.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetAllRoomsQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetAllRoomsQueryHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetAllRoomsQueryHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetAllRoomsQueryHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetAllRoomsQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:26:25.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetStaffQuery.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Staff Query\\GetStaffQuery.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Query\\Staff Query\\GetStaffQuery.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Staff Query\\GetStaffQuery.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Query\\Staff Query\\GetStaffQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:22:47.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetStaffQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffQueryHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffQueryHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffQueryHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:22:37.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GetStaffByPostQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffByPostQueryHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffByPostQueryHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffByPostQueryHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffByPostQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:15:48.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IStaffRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementDomain\\Interfaces\\IStaffRepository.cs",
+              "RelativeDocumentMoniker": "HotelManagementDomain\\Interfaces\\IStaffRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementDomain\\Interfaces\\IStaffRepository.cs",
+              "RelativeToolTip": "HotelManagementDomain\\Interfaces\\IStaffRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:48:04.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetStaffByPostQuery.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Staff Query\\GetStaffByPostQuery.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Query\\Staff Query\\GetStaffByPostQuery.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Staff Query\\GetStaffByPostQuery.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Query\\Staff Query\\GetStaffByPostQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:07:32.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GetRoomByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetRoomByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetRoomByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetRoomByIdQueryHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\QueryHandler\\Room QueryHandler\\GetRoomByIdQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:04:58.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetStaffByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffByIdQueryHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\QueryHandler\\Staff QueryHandler\\GetStaffByIdQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:00:48.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GetRoomByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Room Query\\GetRoomByIdQuery.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Query\\Room Query\\GetRoomByIdQuery.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Query\\Room Query\\GetRoomByIdQuery.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Query\\Room Query\\GetRoomByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:02:39.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UpdateRoomCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Room CommandHandler\\UpdateRoomCommandHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\CommandHandler\\Room CommandHandler\\UpdateRoomCommandHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Room CommandHandler\\UpdateRoomCommandHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\CommandHandler\\Room CommandHandler\\UpdateRoomCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:56:40.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UpdateRoomCommand.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Room Command\\UpdateRoomCommand.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Command\\Room Command\\UpdateRoomCommand.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Room Command\\UpdateRoomCommand.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Command\\Room Command\\UpdateRoomCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:53:37.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DeleteRoomCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Room CommandHandler\\DeleteRoomCommandHandler.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\CommandHandler\\Room CommandHandler\\DeleteRoomCommandHandler.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\CommandHandler\\Room CommandHandler\\DeleteRoomCommandHandler.cs",
+              "RelativeToolTip": "HotelManagementApplication\\CommandHandler\\Room CommandHandler\\DeleteRoomCommandHandler.cs",
+              "ViewState": "AgIAAAYAAADAZWZmZmYkwBMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:48:53.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DeleteRoomCommand.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Room Command\\DeleteRoomCommand.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Command\\Room Command\\DeleteRoomCommand.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Room Command\\DeleteRoomCommand.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Command\\Room Command\\DeleteRoomCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:45:44.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DeleteStaffCommand.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Staff Command\\DeleteStaffCommand.cs",
+              "RelativeDocumentMoniker": "HotelManagementApplication\\Command\\Staff Command\\DeleteStaffCommand.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HotelManagement\\HotelManagementApplication\\Command\\Staff Command\\DeleteStaffCommand.cs",
+              "RelativeToolTip": "HotelManagementApplication\\Command\\Staff Command\\DeleteStaffCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:44:48.351Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
