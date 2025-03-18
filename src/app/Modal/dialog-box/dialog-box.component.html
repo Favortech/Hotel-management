@@ -1,0 +1,32 @@
+
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title">Confirm Deletion</h5>
+       <button
+         type="button"
+         class="btn-close"
+         (click)="modal.dismiss('cancel click')"
+       ></button>
+     </div>
+     <div class="modal-body">
+       <p>
+       
+         <strong>  Are you sure you want to delete the room</strong
+         >
+       </p>
+     </div>
+     <div class="modal-footer">
+       <button
+         type="button"
+         class="btn btn-secondary"
+         (click)="modal.dismiss('cancel click')"
+       >
+         Cancel
+       </button>
+       <button type="button" ngbAutofocus class="btn btn-danger" class="btn btn-danger" (click)="Confirm()">
+         Delete
+       </button>
+     </div>
+   </div>
+ </div>

@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <h2>Add A New Room</h2>
+  <h2>Edit Room</h2>
   <hr />
   <h3>Room Picture</h3>
   <input type="file" id="imageInput" multiple accept="image/*" (change)="handleFileChange($event)">
@@ -7,7 +7,7 @@
   <div class="image-gallery" id="gallery"></div>
   <hr />
   <h3>Room Details</h3>
-  <form action="" class="row align-items-center" (ngSubmit)="updateRoom()">
+  <form action="" [formGroup]="editRoomForm" class="row align-items-center" (ngSubmit)="updateRoom()">
 
     <div class="col-sm-3">
       <label for="specificSizeInputName">room Number</label>
@@ -20,21 +20,23 @@
         [(ngModel)]="room.roomNumber"
       />
     </div>
-    <div class="col-sm-3">
-      <label for="specificSizeSelect">room Category</label>
-
+   
+    <div class="col mb-3">
+      <label for="category" class="form-label">Room Category</label>
       <select
-        class="form-select"
         name="roomCategory"
-        id="specificSizeSelect"
         [(ngModel)]="room.category"
-      >       <option selected>Choose ...</option>
-        <option value="1">Regular</option>
-        <option value="2">Standard</option>
-        <option value="3">VIP</option>
-        <option value="4">Conference Hall</option>
+      type="text"
+          formControlName="category"
+          id="category"
+          class="form-select"
+          placeholder="Room Category"
+      >
+          <option *ngFor="let category of categories" [value]="category">
+              {{ category?.categoryName }} <!-- Display category name -->
+          </option>
       </select>
-    </div>
+  </div>
     <div class="col-sm-3">
       <label for="specificSizeInputName">room Floor</label>
       <input

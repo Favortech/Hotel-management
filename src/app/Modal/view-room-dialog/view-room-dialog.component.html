@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <h5 class="modal-title">View Room</h5>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+  </div>
+  <div class="modal-body">
+    <div><strong>Room Number:</strong> {{ roomData?.roomNumber }}</div>
+    <div><strong>Category:</strong> {{ roomData?.category }}</div>
+    <div><strong>Floor:</strong> {{ roomData?.roomFloor }}</div>
+    <div><strong>Capacity:</strong> {{ roomData?.capacity }}</div>
+    <div><strong>Price:</strong> {{ roomData?.price }}</div>
+    <div><strong>Availability:</strong> {{ roomData?.isAvailable }}</div>
+    <div><strong>Description:</strong> {{ roomData?.description }}</div>
+    <div>
+      <strong>Amenities:</strong>
+      <ul>
+        <li *ngFor="let amenity of roomData?.amenities">{{ amenity.name }}: {{ amenity.quantity }}</li>
+      </ul>
+    </div>
+  </div>

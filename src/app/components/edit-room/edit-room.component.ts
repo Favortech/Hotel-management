@@ -1,55 +1,70 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef } from '@angular/core';
-import { FormArray, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ActivatedRoute, Router, RouterLink, RouterModule } from '@angular/router';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {
+  FormArray,
+  FormControl,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
+import {
+  ActivatedRoute,
+  Router,
+  RouterLink,
+  RouterModule,
+} from '@angular/router';
 import { Amenity, Room } from '../../models/room';
 import { RoomService } from '../../services/room.service';
 
 @Component({
   selector: 'app-edit-room',
-  imports: [CommonModule,FormsModule,RouterLink,RouterModule,ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    
+    RouterModule,
+    ReactiveFormsModule,
+  ],
   templateUrl: './edit-room.component.html',
-  styleUrl: './edit-room.component.scss'
+  styleUrl: './edit-room.component.scss',
 })
-export class EditRoomComponent {
-  getrooms:any = {};
+export class EditRoomComponent implements OnInit  {
+  editRoomForm!: FormGroup;
+  room!: Room;
+
+
+  @Output() onClose = new EventEmitter();
+  @Output() onSaveChanges = new EventEmitter<Room>();
+
+  getrooms: any = {};
   newItemName = '';
   newItemNumber = 0;
   items: any[] = [];
-  room: Room = {
-    id: 0,
-    roomNumber: '',
-    category: '0',
-    roomFloor: '',
-    capacity: 0,
-    isAvailable:'',
-    price: 0,
-    description: '',
-    amenities: []
-  };
+
   amenities: Amenity = {
     name: '',
-    quantity: 0
+    quantity: 0,
   };
-//   showAlert = false;
+  //   showAlert = false;
 
-//   createRoom() {
-//     // Call API to create room
-//     console.log('Room Edited successfully!');
-//     window.alert('Room Edited successfully!');
+  //   createRoom() {
+  //     // Call API to create room
+  //     console.log('Room Edited successfully!');
+  //     window.alert('Room Edited successfully!');
 
-//     this.showAlert = true;
-//     setTimeout(() => {
-//       this.showAlert = false;
-//     }, 3000);
-//   }
-
+  //     this.showAlert = true;
+  //     setTimeout(() => {
+  //       this.showAlert = false;
+  //     }, 3000);
+  //   }
 
   files: File[] = [];
 
   roomId!: number;
-selectedAmenities: any;
-UpdateRoomForm =  new FormGroup({
+  selectedAmenities: any;
+  UpdateRoomForm = new FormGroup({
     image: new FormControl(''),
     roomNumber: new FormControl('', Validators.required),
     category: new FormControl('', Validators.required),
@@ -58,17 +73,27 @@ UpdateRoomForm =  new FormGroup({
     isAvailable: new FormControl(false),
     price: new FormControl(0, [Validators.required, Validators.min(100)]),
     description: new FormControl('', Validators.required),
-  
+
     name: new FormControl(''),
     quantity: new FormControl(0),
     amenities: new FormArray([]),
   });
   roomCategories!: any[];
+categories: any;
 
+  constructor(
+    private route: ActivatedRoute,
+    private roomService: RoomService,
+    private router: Router,
+    private elementRef: ElementRef
+  ) {}
 
-
-
-  constructor(private route: ActivatedRoute, private roomService: RoomService, private router: Router, private elementRef: ElementRef) {}
+  // saveChanges(): void {
+  //   this.roomService.updateRoom(this.room).subscribe(() => {
+  //     this.onSaveChanges.emit(this.room);
+  //     this.onClose.emit();
+  //   });
+  // }
   handleFileChange(event: any) {
     const selectedFiles = event.target.files;
     for (const file of selectedFiles) {
@@ -100,7 +125,7 @@ UpdateRoomForm =  new FormGroup({
   addItem() {
     this.items.push({
       name: this.newItemName,
-      number: this.newItemNumber
+      number: this.newItemNumber,
     });
     this.newItemName = '';
     this.newItemNumber = 0;
@@ -125,17 +150,49 @@ UpdateRoomForm =  new FormGroup({
   //   }
   // }
   ngOnInit(): void {
+    this.editRoomForm = new FormGroup({
+      id: new FormControl(''),
+      roomNumber: new FormControl(''),
+      category: new FormControl(''),
+      roomFloor: new FormControl(''),
+      capacity: new FormControl(''),
+      isAvailable: new FormControl(''),
+      price: new FormControl(''),
+      description: new FormControl(''),
+      amenities: new FormArray([])
+    });
+
     this.roomService.getRoomCategories().subscribe((categories: any[]) => {
       this.roomCategories = categories;
       console.log(categories);
     });
-      const roomId = this.route.snapshot.paramMap.get('roomId');
-      if (roomId) {
-        this.roomService.getRoom(Number(roomId)).subscribe((response: any) => {
-          this.room = response as Room;
-          this.selectedAmenities = this.room.amenities;
-        });
-      }
+    const roomId = this.route.snapshot.paramMap.get('roomId');
+    if (roomId) {
+      this.roomService.getRoom(Number(roomId)).subscribe((response: any) => {
+        this.room = response as Room;
+        this.selectedAmenities = this.room.amenities;
+      });
+    }
+  }
+
+  openEditModal(room: Room): void {
+    this.room = room;
+    this.editRoomForm.patchValue(room);
+    const amenitiesFormArray = this.editRoomForm.get('amenities') as FormArray;
+    amenitiesFormArray.clear();
+    room.amenities.forEach(amenity => {
+      amenitiesFormArray.push(new FormGroup({
+        name: new FormControl(amenity.name),
+        quantity: new FormControl(amenity.quantity)
+      }));
+    });
+  }
+
+  saveChanges(): void {
+    const updatedRoom = this.editRoomForm.value;
+    this.roomService.updateRoom(updatedRoom).subscribe(() => {
+      console.log('Room updated successfully');
+    });
   }
   // updateRoom(): void {
   //   this.roomService.updateRoom(this.room).subscribe(() => {
@@ -147,11 +204,15 @@ UpdateRoomForm =  new FormGroup({
   // }
   updateRoom(): void {
     this.room.amenities = this.selectedAmenities;
-    this.roomService.updateRoom(this.room).subscribe(() => {
-      console.log('Room updated');
-      // Navigate back to the room list component
-    }, (error: any) => {
-      console.error('Error updating room:', error);
-    });
+    this.roomService.updateRoom(this.room).subscribe(
+      () => {
+        console.log('Room updated');
+        // Navigate back to the room list component
+      },
+      (error: any) => {
+        console.error('Error updating room:', error);
+      }
+    );
   }
+
 }

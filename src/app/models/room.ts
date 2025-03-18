@@ -7,7 +7,7 @@ export interface Room {
     isAvailable: string;
     price: number;
     description: string;
-    amenities: Amenity[];
+    amenities: { name: string; quantity: number }[];
   }
   
   export interface Amenity {

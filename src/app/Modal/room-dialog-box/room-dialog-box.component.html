@@ -1,0 +1,41 @@
+<div class="modal-header">
+  <h5 class="modal-title">{{ roomData ? 'Edit Room' : 'Add Room' }}</h5>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="roomForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label>Room Number</label>
+      <input type="text" formControlName="roomNumber" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Category</label>
+      <input type="text" formControlName="category" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Floor</label>
+      <input type="text" formControlName="roomFloor" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Capacity</label>
+      <input type="number" formControlName="capacity" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Price</label>
+      <input type="number" formControlName="price" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Availability</label>
+      <select formControlName="isAvailable" class="form-select" required>
+        <option value="Available">Available</option>
+        <option value="Under Maintenance">Under Maintenance</option>
+        <option value="Booked">Booked</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label>Description</label>
+      <textarea formControlName="description" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>

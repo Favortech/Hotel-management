@@ -54,6 +54,9 @@ export class RoomService {
   //   return this.http.delete(`${this.apiUrl}/rooms/${id}`);
   // }
  
+  getRoomsByAvailability(status: string): any {
+    return this.http.get<Room[]>(`${this.apiUrl}/availability/${status}`);
+}
   updateRoom(room: Room): any {
     return this.http.put(`${this.apiUrl}/${room.id}`, room);
   }

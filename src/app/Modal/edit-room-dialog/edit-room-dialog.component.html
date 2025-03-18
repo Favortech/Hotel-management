@@ -1,0 +1,53 @@
+<!-- edit-room-dialog.component.html -->
+<div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Edit Room</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="roomNumber">Room Number</label>
+          <input type="text" class="form-control" id="roomNumber" [(ngModel)]="room.roomNumber">
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <input type="text" class="form-control" id="category" [(ngModel)]="room.category">
+        </div>
+        <div class="form-group">
+          <label for="roomFloor">Room Floor</label>
+          <input type="text" class="form-control" id="roomFloor" [(ngModel)]="room.roomFloor">
+        </div>
+        <div class="form-group">
+          <label for="capacity">Capacity</label>
+          <input type="number" class="form-control" id="capacity" [(ngModel)]="room.capacity">
+        </div>
+        <div class="form-group">
+          <label for="isAvailable">Is Available</label>
+          <input type="checkbox" class="form-control" id="isAvailable" [(ngModel)]="room.isAvailable">
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" class="form-control" id="price" [(ngModel)]="room.price">
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea class="form-control" id="description" [(ngModel)]="room.description"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="amenities">Amenities</label>
+          <ul>
+            <li *ngFor="let amenity of room.amenities">
+              {{ amenity.name }} ({{ amenity.quantity }})
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary" (click)="updateRoom()">Save changes</button>
+    </div>
+  </div>

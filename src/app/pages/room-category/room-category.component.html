@@ -1,33 +1,96 @@
-<button type="button" class="btn btn-outline-secondary mr-2" routerLink="/create-room-category">
-  Add A New Room Category
-    </button>
-    <!-- <button type="button" class="btn btn-outline-secondary mr-2" title="Tooltip on top" router-link="/create-room">
-        View Room Category
-        </button> -->
-<hr>
-<table class="table table-striped">
-<thead>
-<tr>
-  <th scope="col">#</th>
-  <th scope="col">Room Category Name</th>
-  <th scope="col">Room Category View</th>
-  <th scope="col">Room Category Description</th>
-  <th scope="col">Actions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  @for (room of roomCategories; track $index) {
+<div class="container-fluid">
+  <button
+    type="submit"
+    class="btn btn-outline-secondary mr-2"
+    (click)="openRoomDialog()"
+  >
+    Add A New Room Category
+  </button>
 
-    <th scope="row">{{ room.id }}</th>
+  <!-- Button trigger modal -->
+  <button
+    type="button"
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#createRoomCategory"
+  >
+    Add A New Room Category
+  </button>
 
-    <td>{{ room.roomName }}
-    <td>
-       {{ room.roomView }}
-    </td>
-    <td>{{ room.roomDescription}}</td>
-    
-  }
-</tr>
-</tbody>
-</table>
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="createRoomCategory"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="createRoomCategoryLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="createRoomCategoryLabel">
+            Modal title
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <app-create-room-category></app-create-room-category>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <button type="button" class="btn btn-outline-secondary mr-2" title="Tooltip on top" router-link="/create-room">
+          View Room Category
+          </button> -->
+  <hr />
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Room Category Name</th>
+        <th scope="col">Room Category Description</th>
+        <th scope="col">Room Category Features</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (room of roomCategories; track $index) {
+      <tr>
+        <th scope="row">{{ room.id }}</th>
+
+        <td>{{ room.categoryName }}</td>
+        <td>{{ room.description }}</td>
+        <td>{{ room.features }}</td>
+        <td>
+          <button type="button" class="btn btn-sm btn-primary">
+            <i class="bi bi-pencil"></i> Edit
+          </button>
+          <button type="button" class="btn btn-sm btn-danger" (click)="openDeleteDialog()" >
+            <!-- (click)="deleteRoomCategory(roomCategories.id)" -->
+            <i class="bi bi-trash"></i> Delete
+            <!-- <button type="button" class="btn btn-sm btn-danger" (click)="deleteRoom(room.id)">
+          <i class="bi bi-trash"></i> -->
+          </button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

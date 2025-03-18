@@ -10,6 +10,7 @@ import {
 } from '@angular/forms';
 import { RouterLink, RouterModule } from '@angular/router';
 import { RoomCategoryService } from '../../services/room-category.service';
+import { RoomCategory } from '../../models/roomCategory';
 
 @Component({
   selector: 'app-create-room-category',
@@ -26,24 +27,33 @@ import { RoomCategoryService } from '../../services/room-category.service';
 export class CreateRoomCategoryComponent implements OnInit {
   files: File[] = [];
   features!: FormArray;
+  featuresList: { featureName: string }[] = [];
   showAlert = false;
 
-  roomcategoryForm = new FormGroup({
-    image: new FormControl(''),
-    name: new FormControl('', Validators.required),
-    description: new FormControl('', Validators.required),
-    featureName: new FormControl('', Validators.required),
-    features: new FormArray([]), // Initialize the features as a FormArray
-  });
+ 
+  roomCategories!: RoomCategory[];
+  roomcategoryForm: FormGroup;
 
   constructor(
     private elementRef: ElementRef,
     private roomCategoryService: RoomCategoryService
   ) {
+    this.roomcategoryForm = new FormGroup({
+      image: new FormControl(''),
+      name: new FormControl('', Validators.required),
+      description: new FormControl('', Validators.required),
+      featureName: new FormControl('', Validators.required),
+      features: new FormArray([]), // Initialize the features as a FormArray
+    });
     // this.features = this.roomcategoryForm.get('features') as FormArray;
   }
+  ngOnInit(): void {
 
-  ngOnInit(): void {}
+  }
+
+  
+  
+
 
   onCreate(): void {
     if (this.roomcategoryForm.valid) {
@@ -69,14 +79,10 @@ export class CreateRoomCategoryComponent implements OnInit {
 
     if (featureName) {
       // Add to the FormArray
-      this.features.push(
-        new FormGroup({
-          featureName: new FormControl(featureName),
-        })
-      );
+      this.features.push({ featureName: name});
       if (featureName) {
         // Add to amenitiesList for table display
-        this.features.push({ FeatureName: featureName });
+        this.featuresList.push({ featureName: featureName });
 
         // Add to the FormArray (if needed for submission)
         this.features = this.roomcategoryForm.get('features') as FormArray;
@@ -95,7 +101,10 @@ export class CreateRoomCategoryComponent implements OnInit {
 
   removeFeature(index: number): void {
     // Remove from the FormArray
-    this.features.removeAt(index);
+    this.featuresList.splice(index,1);
+     // Also remove from the FormArray
+     const features = this.roomcategoryForm.get('features') as FormArray;
+     features.removeAt(index);
   }
 
   addMoreFiles() {

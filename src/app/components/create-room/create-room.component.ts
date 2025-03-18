@@ -1,14 +1,10 @@
 
 
-
-
-
-import { Component, ElementRef, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Component, ElementRef, EventEmitter, OnInit, Output } from '@angular/core';
+import { FormArray, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RoomService } from '../../services/room.service'; // Adjust the path as necessary
 import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { Room } from '../../models/room';
 
 @Component({
   selector: 'app-create-room',
@@ -107,6 +103,7 @@ export class CreateRoomComponent implements OnInit {
   //     }
   //   }
   // }
+  @Output() roomCreated = new EventEmitter<void>()
   files: File[] = [];
   amenities!: FormArray;
   showAlert = false;
@@ -117,7 +114,7 @@ export class CreateRoomComponent implements OnInit {
     category: new FormControl('', Validators.required),
     roomFloor: new FormControl('', Validators.required),
     capacity: new FormControl(0, [Validators.required, Validators.min(1)]),
-    isAvailable: new FormControl(''),
+    isAvailable: new FormControl('Available', Validators.required),
     price: new FormControl(0, [Validators.required, Validators.min(100)]),
     description: new FormControl('', Validators.required),
   
@@ -126,6 +123,7 @@ export class CreateRoomComponent implements OnInit {
     amenities: new FormArray([]),
   });
   categories: any;
+  createModalOpen: boolean = false;
   
 
 
@@ -174,23 +172,30 @@ loadRoomCategories(): void {
 
     if (this.roomForm.valid) {
       console.log(this.roomForm.value);
+      
     //   this.roomService.createRoom({
     //     name: this.roomName,
     //     roomCategoryId: this.selectedRoomCategoryId // This should be the ID
     // }).subscribe(response => {
     //     // Handle the response
     //});
-      this.roomService.createRoom(this.roomForm.value).subscribe((res) => {
-        console.log(res);
-        alert('Room Created Succesfully ');
-        this.router.navigate(['/room']);
-      }, (error) => {
-        console.error('Error creating room:', error);
-      });
-    } else {
-      alert('Please fill all required fields.');
+        this.roomService.createRoom(this.roomForm.value).subscribe((res) => {
+          console.log(res);
+          alert('Room Created Succesfully ');
+          this.closeCreateModal(); // Close the modal
+          this.roomCreated.emit();
+          this.roomForm.reset();
+          //this.router.navigate(['/room']);
+        }, (error) => {
+          console.error('Error creating room:', error);
+        });
+      } else {
+        alert('Please fill all required fields.');
+      }
     }
-  }
+    closeCreateModal(): void {
+      this.createModalOpen = false; // Close the modal
+    }
 
   
   // }

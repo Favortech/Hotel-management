@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class StaffComponent implements OnInit {
 
-  staffs:Staff[] = [];
+  staffs: any[] = [];
 editStaff: any;
 deleteStaff: any;
 
@@ -21,7 +21,7 @@ ngOnInit(): void {
 }
 
 loadStaffs(): void {
-  this.staffService.getStaffs().subscribe((staffs: Staff[]) => {
+  this.staffService.getStaffs().subscribe((staffs: any[]) => {
       this.staffs = staffs;
      console.log(staffs)
     })
